@@ -19,8 +19,8 @@ client_scripts {
 
 server_scripts {
     'bridge/sv_framework.lua',
-    'server/sv_main.lua',
     'server/sv_storage.lua',
+    'server/sv_main.lua',
 }
 
 ui_page 'web/build/index.html'
