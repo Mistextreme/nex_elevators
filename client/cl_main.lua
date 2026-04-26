@@ -227,8 +227,8 @@ RegisterNetEvent('nex_elevators:doTeleport', function(coords, heading)
         FreezeEntityPosition(ped, true)
     end
 
-    -- Move player
-    SetEntityCoords(ped, coords.x, coords.y, coords.z, false, false, false, true)
+    -- Move player; clearArea = false to avoid erasing nearby entities
+    SetEntityCoords(ped, coords.x, coords.y, coords.z, false, false, false, false)
     SetEntityHeading(ped, heading)
 
     -- Allow the world to load before fading back in
