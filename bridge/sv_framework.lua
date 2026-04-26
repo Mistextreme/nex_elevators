@@ -6,9 +6,7 @@ local _ESX    = nil
 local _QBCore = nil
 
 if Config.Framework == 'esx' then
-    TriggerEvent('esx:getSharedObject', function(obj)
-        _ESX = obj
-    end)
+    _ESX = exports['es_extended']:getSharedObject()
 
 elseif Config.Framework == 'qbcore' then
     _QBCore = exports['qb-core']:GetCoreObject()
